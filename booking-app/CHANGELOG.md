@@ -4,6 +4,14 @@ Versioning rules: see [OPERATIONS.md → Versioning](OPERATIONS.md#versioning).
 MAJOR = something people must prepare for · MINOR = new user-visible capability
 · PATCH = fixes, copy, dependency/security updates.
 
+## 1.3.11 — 2026-11-03
+
+- Security update: Next.js 16.4.2 (fixes two critical remote-code-execution
+  advisories and one denial-of-service advisory in Next.js 16.0–16.4.0). None
+  were exploitable here: image optimisation is off, and the app uses neither
+  `use cache` nor Server Actions. Upgraded so audits stay clean and future
+  changes stay safe.
+
 ## 1.3.10 — 2026-10-23
 
 - Security update: Node.js 24.22.1 (security release; fixes in HTTP, DNS, TLS,
